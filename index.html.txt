@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daiahs Logistics & Supply Ltd</title>
+  <meta name="description" content="Daiahs Logistics & Supply — Import, Preorder, Sourcing and Logistics services. Trusted sourcing from China, pre-orders and timely delivery." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#3EA7D6"/>
+  <!-- Favicon using your uploaded logo -->
+  <link rel="icon" href="/mnt/data/74DF17C8-858E-4971-9B3B-77B845D8D4FB.png" />
+  <style>
+    :root{
+      --aqua:#3EA7D6;
+      --purple:#6B3EA7;
+      --deep-purple:#3b1f58;
+      --bg:#FBFBFD;
+      --card:#FFFFFF;
+      --muted:#6b6b7a;
+      --radius:14px;
+      --maxwidth:1100px;
+      --glass: rgba(255,255,255,0.75);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#111827;
+      background: linear-gradient(180deg, rgba(59,31,88,0.06) 0%, rgba(62,167,214,0.02) 100%), var(--bg);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    a{color:var(--aqua); text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
+    .wrap{max-width:var(--maxwidth);margin:32px auto;padding:24px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    /* logo image */
+    .logo-img{
+      width:62px;height:62px;border-radius:10px;object-fit:cover;
+      box-shadow:0 6px 18px rgba(98,58,140,0.12);
+      background:linear-gradient(135deg,var(--purple),var(--aqua));
+    }
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{font-weight:600;color:var(--deep-purple);font-size:15px}
+    .hero{
+      margin-top:16px;
+      background: linear-gradient(135deg, rgba(107,62,167,0.06), rgba(62,167,214,0.03));
+      border-radius:20px;padding:36px;display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;
+      box-shadow:0 10px 30px rgba(50,50,93,0.06);
+    }
+    .hero h1{margin:0;font-family:"Playfair Display", serif;font-size:34px;color:var(--deep-purple)}
+    .hero p.lead{margin-top:10px;color:var(--muted);font-size:16px}
+    .cta-row{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;font-weight:700;border:0;cursor:pointer;box-shadow:0 8px 18px rgba(62,167,214,0.12);}
+    .btn-primary{background:linear-gradient(90deg,var(--aqua),var(--purple));color:white}
+    .btn-outline{background:transparent;border:2px solid rgba(59,31,88,0.08);color:var(--deep-purple)}
+    .hero-card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 6px 18px rgba(59,31,88,0.06);}
+    .contact-item{display:flex;gap:10px;align-items:center;margin-bottom:10px}
+    .contact-item small{color:var(--muted);font-size:13px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
+    .service{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.92));padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(59,31,88,0.04)}
+    .service h3{margin:0 0 8px 0;color:var(--deep-purple)}
+    .service p{margin:0;color:var(--muted);font-size:14px}
+    .about{display:flex;gap:20px;align-items:center;margin:28px 0;padding:22px;border-radius:12px;background:var(--glass)}
+    .about .about-text{flex:1}
+    .about .about-image{width:320px;height:200px;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,var(--aqua),var(--purple));display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    .testimonials{margin:28px 0}
+    .t-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .t{background:white;padding:16px;border-radius:10px;box-shadow:0 8px 18px rgba(31,41,55,0.04)}
+    footer{margin-top:24px;padding-top:18px;border-top:1px dashed rgba(59,31,88,0.04)}
+    .contact-grid{display:grid;grid-template-columns:1fr 400px;gap:20px;margin-top:18px}
+    .card{background:white;padding:18px;border-radius:12px;box-shadow:0 8px 24px rgba(31,41,55,0.04)}
+    .muted{color:var(--muted);font-size:14px}
+    label{display:block;margin:10px 0 6px;font-size:14px;color:var(--deep-purple)}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6f0;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    .small{font-size:13px;color:var(--muted);margin-top:8px}
+    .foot-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;color:var(--muted);flex-wrap:wrap}
+    /* Map container */
+    .map-wrap{width:100%;height:220px;border-radius:10px;overflow:hidden;border:1px solid #eee}
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr; padding:24px}
+      .services{grid-template-columns:repeat(2,1fr)}
+      .t-list{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:560px){
+      nav{display:none}
+      .brand .tag{display:none}
+      .services{grid-template-columns:1fr}
+      .t-list{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header aria-label="Top navigation">
+      <div class="brand" aria-hidden="false">
+        <!-- Logo: using uploaded file path as requested -->
+        <img src="/mnt/data/74DF17C8-858E-4971-9B3B-77B845D8D4FB.png" alt="Daiahs Logistics logo" class="logo-img">
+        <div>
+          <div style="font-weight:800;color:var(--deep-purple);font-size:18px">Daiahs Logistics & Supply Ltd</div>
+          <div class="muted" style="font-size:13px">Import • Preorder • Sourcing • Shipping</div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div>
+        <h1 id="hero-heading">Sourcing & delivering what your business needs — reliably.</h1>
+        <p class="lead">Daiahs Logistics & Supply helps businesses and individuals import items from China, manage pre-orders, and handle shipping and local delivery — with transparent pricing and reliable tracking.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact" title="Get a quote">Get a Quote</a>
+          <a class="btn btn-outline" href="#services" title="View services">Our Services</a>
+        </div>
+
+        <div style="margin-top:22px;display:flex;gap:14px;flex-wrap:wrap">
+          <div style="background:white;padding:12px;border-radius:12px;min-width:180px;box-shadow:0 8px 18px rgba(59,31,88,0.04)">
+            <strong>Fast Sourcing</strong>
+            <div class="small">Speedy supplier matching & negotiation</div>
+          </div>
+          <div style="background:white;padding:12px;border-radius:12px;min-width:180px;box-shadow:0 8px 18px rgba(59,31,88,0.04)">
+            <strong>Preorder Management</strong>
+            <div class="small">Organised preorders & group buying</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Contact and quick info">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div class="muted">Contact</div>
+            <div style="font-weight:800;color:var(--deep-purple);margin-top:6px">+233 50 019 4263</div>
+            <div style="font-weight:600;color:var(--deep-purple);margin-top:4px">+233 55 171 4224</div>
+          </div>
+          <div style="text-align:right">
+            <div class="muted">Email</div>
+            <div style="font-weight:700;margin-top:6px;color:var(--deep-purple)">enoch@daiahslogistics.com</div>
+            <div class="muted" style="font-size:12px;margin-top:10px">164 Asparagus Street, Accra, Ghana</div>
+          </div>
+        </div>
+
+        <hr style="border:none;border-top:1px dashed rgba(59,31,88,0.06);margin:14px 0">
+
+        <div style="font-size:14px">
+          <strong>Get a free consultation</strong>
+          <p class="small">Send a short message below or call us — we’ll respond with a tailored sourcing plan and cost estimate.</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="services-heading" style="margin-top:18px">
+      <h2 id="services-heading" style="font-family:'Playfair Display',serif;color:var(--deep-purple);margin-bottom:12px">Our Services</h2>
+      <div class="services" role="list">
+        <div class="service" role="listitem">
+          <h3>Product Sourcing</h3>
+          <p>Find verified suppliers in China and other markets, sample management, and QC checks before shipping.</p>
+        </div>
+        <div class="service" role="listitem">
+          <h3>Import & Preorder Management</h3>
+          <p>Organise group preorders, manage timelines and payments, and consolidate shipments for savings.</p>
+        </div>
+        <div class="service" role="listitem">
+          <h3>Local Logistics & Delivery</h3>
+          <p>Warehousing, sorting, last-mile delivery, and return handling within Ghana.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about" aria-labelledby="about-heading" style="margin-top:6px">
+      <div class="about-text">
+        <h2 id="about-heading" style="font-family:'Playfair Display',serif;color:var(--deep-purple);margin:0 0 6px 0">About Daiahs Logistics</h2>
+        <p class="muted">Born from a passion to make international sourcing simple, Daiahs Logistics & Supply Ltd combines attentive customer service with practical logistics know-how. We help small businesses and individuals get quality products from overseas without the usual headaches.</p>
+        <p class="small" style="margin-top:12px"><strong>Vision:</strong> To be the most trusted sourcing partner for Ghanaian businesses.</p>
+      </div>
+      <div class="about-image" aria-hidden="true">Daiahs</div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" aria-labelledby="test-heading">
+      <h3 id="test-heading" style="margin:0 0 12px 0;color:var(--deep-purple);font-family:'Playfair Display',serif">What clients say</h3>
+      <div class="t-list" role="list">
+        <div class="t" role="listitem"><strong>“Excellent sourcing — saved us 20%”</strong><div class="small" style="margin-top:6px">— A retail client, Accra</div></div>
+        <div class="t" role="listitem"><strong>“Fast, clear communication”</strong><div class="small" style="margin-top:6px">— Small boutique owner</div></div>
+        <div class="t" role="listitem"><strong>“Reliable delivery and handling”</strong><div class="small" style="margin-top:6px">— Event rental business</div></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading" style="margin-top:26px">
+      <h2 id="contact-heading" style="font-family:'Playfair Display',serif;color:var(--deep-purple)">Contact & Request a Quote</h2>
+      <div class="contact-grid" role="region" aria-label="Contact region">
+        <div class="card" aria-hidden="false">
+          <h3 style="margin-top:0">Send us a message</h3>
+          <form id="contactForm" onsubmit="return handleSubmit(event)" novalidate>
+            <label for="name">Full name</label>
+            <input id="name" name="name" required placeholder="Your full name">
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" required placeholder="+233...">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell us what you need (product, qty, target price, timeline)"></textarea>
+
+            <div style="display:flex;gap:10px;margin-top:12px;align-items:center">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <div class="small muted">Or call: <strong>+233 50 019 4263</strong></div>
+            </div>
+            <div id="formStatus" class="small muted" aria-live="polite" style="margin-top:10px"></div>
+          </form>
+        </div>
+
+        <aside class="card" aria-label="Contact details">
+          <h3 style="margin-top:0">Office & Contacts</h3>
+          <div style="margin-top:8px">
+            <div class="contact-item"><div><strong>Phone</strong></div><small>+233 50 019 4263 / +233 55 171 4224</small></div>
+            <div class="contact-item"><div><strong>Email</strong></div><small>enoch@daiahslogistics.com</small></div>
+            <div class="contact-item"><div><strong>Address</strong></div><small>164 Asparagus Street, Accra, Ghana</small></div>
+          </div>
+
+          <hr style="border:none;border-top:1px dashed rgba(59,31,88,0.05);margin:14px 0">
+
+          <div>
+            <strong>Working Hours</strong>
+            <div class="small muted" style="margin-top:6px">Mon — Fri: 8:00 — 18:00<br>Sat: 9:00 — 14:00</div>
+          </div>
+
+          <!-- Map (Google Maps embed using address query) -->
+          <div style="margin-top:12px">
+            <div class="small muted" style="margin-bottom:6px"><strong>Find us on the map</strong></div>
+            <div class="map-wrap" aria-hidden="false">
+              <iframe
+                src="https://www.google.com/maps?q=164+Asparagus+Street+Accra+Ghana&output=embed"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div style="margin-top:8px;font-size:13px">
+              <a href="https://www.google.com/maps/search/?api=1&query=164+Asparagus+Street+Accra+Ghana" target="_blank" rel="noopener">Open in Google Maps</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot-row">
+        <div>© <strong>Daiahs Logistics & Supply Ltd</strong> — 164 Asparagus Street, Accra</div>
+        <div style="text-align:right" class="muted">Phone: +233 50 019 4263 • Email: <a href="mailto:enoch@daiahslogistics.com">enoch@daiahslogistics.com</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+
+      if(!name || !phone || !email || !message){
+        status.textContent = 'Please complete all fields.';
+        return false;
+      }
+
+      const subject = encodeURIComponent('Quote request from ' + name);
+      const body = encodeURIComponent(
+        'Name: ' + name + '\\nPhone: ' + phone + '\\nEmail: ' + email + '\\n\\nMessage:\\n' + message
+      );
+
+      const mailto = mailto:enoch@daiahslogistics.com?subject=${subject}&body=${body};
+      status.textContent = 'Opening your email client to send the message...';
+      window.location.href = mailto;
+      return false;
+    }
+  </script>
+</body>
+</html>
